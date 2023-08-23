@@ -1,0 +1,175 @@
+{
+  // Create frontend page
+  "frontend_page": {
+    "prefix": "frontend_page",
+    "body": [
+      "import { NextPage } from 'next'",
+      "",
+      "export const ${1}Page: NextPage = () => {",
+      "  return <div>{'Page for ${1}'}</div>",
+      "}",
+      "",
+      "export default ${1}Page",
+      ""
+    ],
+    "description": "Create frontend page"
+  },
+  // Frontend component without props
+  "frontend_component": {
+    "prefix": "frontend_component",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component without props'}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component without props"
+  },
+  // Frontend component with 1 prop
+  "frontend_component_1_prop": {
+    "prefix": "frontend_component_1_prop",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 1 property'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 1 prop"
+  },
+  // Frontend component with 2 props
+  "frontend_component_2_props": {
+    "prefix": "frontend_component_2_props",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3,",
+      "  $4: $5",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2, $4 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 2 props'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "      <div>{JSON.stringify($4)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 2 props"
+  },
+  // Frontend component with 3 props
+  "frontend_component_3_props": {
+    "prefix": "frontend_component_3_props",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3,",
+      "  $4: $5,",
+      "  $6: $7",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2, $4, $6 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 3 props'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "      <div>{JSON.stringify($4)}</div>",
+      "      <div>{JSON.stringify($6)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 3 props"
+  },
+  // Frontend component with 4 props
+  "frontend_component_4_props": {
+    "prefix": "frontend_component_4_props",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3,",
+      "  $4: $5,",
+      "  $6: $7,",
+      "  $8: $9",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2, $4, $6, $8 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 4 props'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "      <div>{JSON.stringify($4)}</div>",
+      "      <div>{JSON.stringify($6)}</div>",
+      "      <div>{JSON.stringify($8)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 4 props"
+  },
+  // Frontend component with 5 props
+  "frontend_component_5_props": {
+    "prefix": "frontend_component_5_props",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3,",
+      "  $4: $5,",
+      "  $6: $7,",
+      "  $8: $9,",
+      "  $10: $11",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2, $4, $6, $8, $10 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 5 props'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "      <div>{JSON.stringify($4)}</div>",
+      "      <div>{JSON.stringify($6)}</div>",
+      "      <div>{JSON.stringify($8)}</div>",
+      "      <div>{JSON.stringify($10)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 5 props"
+  },
+  // Frontend component with 6 props
+  "frontend_component_6_props": {
+    "prefix": "frontend_component_6_props",
+    "body": [
+      "type ComponentProps = {",
+      "  $2: $3,",
+      "  $4: $5,",
+      "  $6: $7,",
+      "  $8: $9,",
+      "  $10: $11,",
+      "  $12: $13",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ $2, $4, $6, $8, $10, $12 }: ComponentProps) => {",
+      "  return (",
+      "    <div>",
+      "      <div>{'Component with 6 props'}</div>",
+      "      <div>{JSON.stringify($2)}</div>",
+      "      <div>{JSON.stringify($4)}</div>",
+      "      <div>{JSON.stringify($6)}</div>",
+      "      <div>{JSON.stringify($8)}</div>",
+      "      <div>{JSON.stringify($10)}</div>",
+      "      <div>{JSON.stringify($12)}</div>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Frontend component with 6 props"
+  }
+}

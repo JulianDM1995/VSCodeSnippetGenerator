@@ -1,1 +1,1 @@
-# VSCodeSnippetGenerator
+# VSCODE Snippet generator

@@ -1,0 +1,16 @@
+{
+  // Snippet for snippet_name
+  "snippet_name": {
+    "prefix": "prefix_to_use",
+    "body": [
+      "export const ${1/(.*)/${1:/upcase}/} = () => {",
+      "    return (",
+      "      <div>",
+      "        <div>{'React component'}</div>",
+      "      </div>",
+      "    )",
+      "  }"
+    ],
+    "description": "This snippet rocks!"
+  }
+}
